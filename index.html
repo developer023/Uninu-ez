@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Nómina</title>
+    <link rel="shortcut icon" href="logoqteal.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="logotxtteal.svg" alt="Logo de la Corporación Universitaria Rafael Núñez">
+            </div>
+            
+            <nav>
+                <a href="conoce.html">Quienes Somos</a>
+               
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="image-container">
+                <img src="logotxtteal.svg" alt="Imagen de la Corporación Universitaria Rafael Núñez">
+            </div>
+            <h1>Calculadora de Nómina de Docentes</h1>
+            <form id="docenteForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="horas">Número de Horas Trabajadas:</label>
+                <input type="number" id="horas" min="0" max="76" required>
+                <button type="button" onclick="calcularNomina()">Calcular Nómina</button>
+            </form>
+            <div id="resultado" class="result"></div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logotxtteal.svg" alt="Logo de la Corporación Universitaria Rafael Núñez">
+            </div>
+            <p>Corporación Universitaria Rafael Núñez</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
